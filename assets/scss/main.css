@@ -1,0 +1,11 @@
+body {
+    font-family: Sevillana;
+}
+.contentWrapper {
+    min-height: 85vh;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
