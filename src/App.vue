@@ -1,6 +1,8 @@
 <template>
   <Header/>
-  <div class="contentWrapper">Body</div>
+  <div class="contentW">
+    <router-view/>
+  </div>
   <Footer/>
 </template>
 

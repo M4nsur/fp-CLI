@@ -1,4 +1,4 @@
-export const headerLinks = [
+export const headerContent = [
   {
     title: "Home",
     url: "/",
@@ -8,5 +8,18 @@ export const headerLinks = [
     title: "About",
     url: "/about",
     alt: "About",
+  },
+];
+
+export const footerContent = [
+  {
+    title: "Телеграм",
+    url: "#",
+    alt: "telegram",
+  },
+  {
+    title: "Почта",
+    url: "#",
+    alt: "post",
   },
 ];

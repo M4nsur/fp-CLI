@@ -1,19 +1,22 @@
 <template>
-    <p>Header</p>
-    <div class={Header.headerLinksWraper} v-for="link in links" :key ="link.alt">
-        <a :href="link.url">{{ link.title }}</a>
-
+    <div class="headerWraper">
+    <span>Header</span>
+    <div class="headerLinks">
+        <div v-for="link in links" :key ="link.alt">
+            <a :href="link.url">{{ link.title }}</a>
+        </div>
     </div>
+    </div>
+
+
 </template>
 
 <script>
-    import {headerLinks} from "./_config"
-    import style from "../../assets/scss/Header.css"
-    console.log(headerLinks)
+    import {headerContent} from "./_config"
     export default {
         data() {
             return {
-                links: headerLinks
+                links: headerContent
             }
         }
     }

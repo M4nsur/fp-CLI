@@ -1,12 +1,41 @@
 body {
     font-family: Sevillana;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
 }
 
 .contentWrapper {
     min-height: 85vh;
 }
 
+.headerWraper {
+    display: flex;
+    justify-content:space-between
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+.footerWraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsWrap {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
 }
