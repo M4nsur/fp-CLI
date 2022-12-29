@@ -11,8 +11,8 @@
 -->
 
 <script>
-  import Header from "@/components/Header-comp.vue"
-  import Footer from "@/components/Footer-comp.vue"
+  import Header from "@/components/HeaderComp.vue"
+  import Footer from "@/components/FooterComp.vue"
   export default  {
     components: {
       Header,
