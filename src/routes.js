@@ -3,20 +3,28 @@ import {
   createWebHistory,
   createWebHashHistory,
 } from "vue-router";
-import Home from "./components/pages/HomeComp.vue";
-import About from "./components/pages/AboutComp.vue";
+import Home from "@/components/pages/homePage.vue";
+import About from "@/components/pages/aboutPage.vue";
+import NotFound from "@/components/pages/notFoundPage.vue";
 
-const routerHistory = createWebHistory();
+const routerHistory = createWebHashHistory();
 const routers = new createRouter({
   history: routerHistory,
   routes: [
     {
       path: "/",
-      compotents: Home,
+      name: "home",
+      component: Home,
     },
     {
       path: "/about",
-      compotents: About,
+      name: "about",
+      component: About,
+    },
+    {
+      path: "/:CatchAll(.*)",
+      name: "notFound",
+      component: NotFound,
     },
   ],
 });

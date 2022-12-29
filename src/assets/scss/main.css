@@ -1,9 +1,15 @@
 body {
     font-family: Sevillana;
-    width: 90%;
+    height: 100%;
     margin: 0 auto;
 }
 
+.mainWrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
 a {
     text-decoration: none;
     color: #666;
@@ -11,17 +17,25 @@ a {
 
 .contentWrapper {
     min-height: 85vh;
+    padding: 0 10px;
 }
 
 .headerWraper {
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
+    background-color: firebrick;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.headerWraper > div {
+    line-height: 50px;
 }
 
 .headerLinks {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 300px;
 }
 
 @font-face {
@@ -32,10 +46,17 @@ a {
 .footerWraper {
     display: flex;
     justify-content: space-between;
+    background-color: firebrick;
+    height: 78px;
+    padding: 0 10px;
 }
 
 .iconsWrap {
     width: 800px;
     display: flex;
     justify-content: space-between;
+}
+
+.footerWraper > div {
+    line-height: 70px;
 }

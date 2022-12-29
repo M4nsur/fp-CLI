@@ -1,5 +1,5 @@
 <template>
-    <div  class="footerWraper" >
+    <div class="footerWraper" >
         <div>Footer</div>
         <div class="iconsWrap">
             <div class="footerIcons" v-for="icon in icons" :key="icon.alt">

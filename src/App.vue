@@ -1,9 +1,11 @@
 <template>
+<div class="mainWrapper">
   <Header/>
-  <div class="contentW">
+  <div class="contentWrapper">
     <router-view/>
   </div>
   <Footer/>
+</div>
 </template>
 
 <!-- 
