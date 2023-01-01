@@ -60,3 +60,11 @@ a {
 .footerWraper > div {
     line-height: 70px;
 }
+
+.cardWraper {
+    height:300px;
+}
+
+img {
+    max-height: 100%;
+}

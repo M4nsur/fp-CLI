@@ -1,21 +1,15 @@
 <template>
-    <div>
-    <slot name="someOne"></slot>
-        {{ name }}
-        {{ role }}
-    <slot name="someTwo"></slot>
+    <div v-if="img">
+        <img src="img" alt="1">
     </div>
-    
+    <slot></slot>
 </template>
 
 <script>
         export default {
         props: {
-            name: {
-                type: String,
-            }, 
-            role: {
-                type: String,
+            img: {
+                type: String
             }
         }
     };

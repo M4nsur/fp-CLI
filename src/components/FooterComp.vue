@@ -3,8 +3,8 @@
         <div>Footer</div>
         <div class="iconsWrap">
             <div class="footerIcons" v-for="icon in icons" :key="icon.alt">
-            {{ icon.title }}
-        </div>
+                {{ icon.title }}
+            </div>
         </div>
     </div>
 </template>
