@@ -3,11 +3,12 @@ import {
   createWebHistory,
   createWebHashHistory,
 } from "vue-router";
-import Home from "@/components/pages/homePage.vue";
-import About from "@/components/pages/aboutPage.vue";
-import NotFound from "@/components/pages/notFoundPage.vue";
+import Home from "@/components/pages/homePage";
+import About from "@/components/pages/aboutPage";
+import NotFound from "@/components/pages/notFoundPage";
+import Alias from "@/components/pages/itemAlias";
 
-const routerHistory = createWebHashHistory();
+const routerHistory = createWebHistory();
 const routers = new createRouter({
   history: routerHistory,
   routes: [
@@ -20,6 +21,11 @@ const routers = new createRouter({
       path: "/about",
       name: "about",
       component: About,
+    },
+    {
+      path: "/:itemAlias",
+      name: "itemAlias",
+      component: Alias,
     },
     {
       path: "/:CatchAll(.*)",

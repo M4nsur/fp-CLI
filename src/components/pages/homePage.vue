@@ -1,9 +1,8 @@
 <template>
-    <div class="cardWraper" v-for="item in items" :key="item.id">
-        <Card :urlImg="items.img">
+    <div v-for="item in items" :key="item.id">
+        <Card :imgUrl="item.img" :link="item.alies">
             {{ item.name }}
             {{ item.role }}
-            <img :src="item.img" alt="">
         </Card> 
     </div>
 

@@ -1,14 +1,20 @@
 <template>
-    <div v-if="img">
-        <img src="img" alt="1">
+    <div v-if="imgUrl" class="cardWraper">
+            <img :src="imgUrl" alt="1">
+            <div><slot></slot></div> 
+        <router-link v-if="link" :to="link">
+            Почитать биографию
+        </router-link>
     </div>
-    <slot></slot>
 </template>
 
 <script>
         export default {
         props: {
-            img: {
+            imgUrl: {
+                type: String
+            },
+            link: {
                 type: String
             }
         }
